@@ -12,7 +12,7 @@ mongoose.connect(process.env.MONGO_URI)
     console.log('Connected to MongoDB');
 })
 .catch(err => {
-    console.log|("Error al conectarse a MongoDB ",err);
+    console.log("Error al conectarse a MongoDB ",err);
 });
 
 
