@@ -45,7 +45,7 @@ bash
 - Descripción: Obtiene todos los productos que pertenecen a una categoría específica.
 #### Parámetros:
 - category (requerido): Nombre de la categoría.
-- Ejemplo de respuesta:
+#### Ejemplo de respuesta:
 ```json
 [
   {
@@ -66,7 +66,7 @@ bash
 - Descripción: Busca productos que coincidan con el nombre proporcionado.
 #### Parámetros:
 - name (requerido): Nombre del producto.
-- Ejemplo de respuesta:
+#### Ejemplo de respuesta:
 ```json
 [
   {
@@ -87,7 +87,7 @@ bash
 #### Parámetros (query):
 - startDate (requerido): Fecha de inicio (formato YYYY-MM-DD).
 - endDate (requerido): Fecha de fin (formato YYYY-MM-DD).
-- Ejemplo de respuesta:
+#### Ejemplo de respuesta:
 ```json
 [
   {
@@ -121,7 +121,7 @@ bash
 - Método: GET
 - Ruta: /api/products
 - Descripción: Obtiene todos los productos de la base de datos.
-- Ejemplo de respuesta:
+#### Ejemplo de respuesta:
 ```json
 [
   {
@@ -142,7 +142,7 @@ bash
 - Descripción: Obtiene un producto específico por su ID.
 #### Parámetros:
 - id (requerido): ID del producto en la base de datos.
-- Ejemplo de respuesta:
+#### Ejemplo de respuesta:
 ```json
 {
   "_id": "603c9e2a1f6b8d1a58d29f0d",
@@ -159,7 +159,7 @@ bash
 - Ruta: /api/products/:id
 - Descripción: Actualiza los detalles de un producto específico.
 #### Parámetros:
-- id (requerido): ID del producto.
+#### id (requerido): ID del producto.
 #### Body (JSON):
 ```json
 {
@@ -177,7 +177,7 @@ bash
 - Descripción: Elimina un producto de la base de datos.
 #### Parámetros:
 - id (requerido): ID del producto.
-- Ejemplo de respuesta:
+#### Ejemplo de respuesta:
 ```json
 {
   "message": "Producto eliminado exitosamente"
