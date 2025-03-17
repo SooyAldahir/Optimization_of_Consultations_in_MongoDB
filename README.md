@@ -43,9 +43,9 @@ bash
 - Método: GET
 - Ruta: /api/products/category/:category
 - Descripción: Obtiene todos los productos que pertenecen a una categoría específica.
-Parámetros:
+#### Parámetros:
 - category (requerido): Nombre de la categoría.
-Ejemplo de respuesta:
+- Ejemplo de respuesta:
 ```json
 [
   {
@@ -64,9 +64,9 @@ Ejemplo de respuesta:
 - Método: GET
 - Ruta: /api/products/name/:name
 - Descripción: Busca productos que coincidan con el nombre proporcionado.
-Parámetros:
+#### Parámetros:
 - name (requerido): Nombre del producto.
-Ejemplo de respuesta:
+- Ejemplo de respuesta:
 ```json
 [
   {
@@ -84,10 +84,10 @@ Ejemplo de respuesta:
 - Método: GET
 - Ruta: /api/products/date-range?startDate=yyyy-mm-dd&endDate=yyyy-mm-dd
 - Descripción: Obtiene productos cuya fecha esté dentro de un rango específico.
-Parámetros (query):
+#### Parámetros (query):
 - startDate (requerido): Fecha de inicio (formato YYYY-MM-DD).
 - endDate (requerido): Fecha de fin (formato YYYY-MM-DD).
-Ejemplo de respuesta:
+- Ejemplo de respuesta:
 ```json
 [
   {
@@ -106,7 +106,7 @@ Ejemplo de respuesta:
 - Método: POST
 - Ruta: /api/products
 - Descripción: Crea un nuevo producto en la base de datos.
-Body (JSON):
+#### Body (JSON):
 ```json
 {
   "name": "",
@@ -121,7 +121,7 @@ Body (JSON):
 - Método: GET
 - Ruta: /api/products
 - Descripción: Obtiene todos los productos de la base de datos.
-Ejemplo de respuesta:
+- Ejemplo de respuesta:
 ```json
 [
   {
@@ -140,9 +140,9 @@ Ejemplo de respuesta:
 - Método: GET
 - Ruta: /api/products/:id
 - Descripción: Obtiene un producto específico por su ID.
-Parámetros:
+#### Parámetros:
 - id (requerido): ID del producto en la base de datos.
-Ejemplo de respuesta:
+- Ejemplo de respuesta:
 ```json
 {
   "_id": "603c9e2a1f6b8d1a58d29f0d",
@@ -158,9 +158,9 @@ Ejemplo de respuesta:
 - Método: PUT
 - Ruta: /api/products/:id
 - Descripción: Actualiza los detalles de un producto específico.
-Parámetros:
+#### Parámetros:
 - id (requerido): ID del producto.
-Body (JSON):
+#### Body (JSON):
 ```json
 {
   "name": "Updated Product",
@@ -175,9 +175,9 @@ Body (JSON):
 - Método: DELETE
 - Ruta: /api/products/:id
 - Descripción: Elimina un producto de la base de datos.
-Parámetros:
+#### Parámetros:
 - id (requerido): ID del producto.
-Ejemplo de respuesta:
+- Ejemplo de respuesta:
 ```json
 {
   "message": "Producto eliminado exitosamente"
